@@ -1,0 +1,45 @@
+<!--Faça um calculadora que faça as seguintes operações:
+Com Valor1 e Valor2: adição, subtração, divisão, multiplicação, Inv, Mod, base N
+Apenas com Valor1: Octa, binario, hexa, fibo, ln, e^x, operacoes trigonometricas -->
+
+<html>
+    <head>
+        <title>Operacoes Matematicas</title>
+        <link rel="stylesheet" href="./styleForm.css">
+        <script type="text/javascript" src="./myJS.js"></script>
+    </head>
+    <h1>Operações Matematicas</h1>
+    <body bgcolor="#E6E6FA">
+        <form>
+            <fieldset>
+                <legend><b>Calculadora</b></legend>
+                <label>  Valor 1: </label><br>
+                <input type="number" id="num1" name="num1"> <br><br>
+                <label> Valor 2:</label><br>
+                <input type="number" id="num2" name="num2"> <br> <br>
+                <label> Resultado: </label><br>
+                <input type="text" id="resultado" name="resultado" disabled>
+                <div id="teste">
+                <input type="button" class="bt1" value=" + " onclick="soma(num1.value, num2.value);"> 
+                <input type="button" class="bt2" value=" - " onclick="subtrai(num1.value, num2.value);">
+                <input type="button" class="bt3" value=" / " onclick="dividir(num1.value, num2.value);">
+                <input type="button" class="bt4" value=" X " onclick="multiplica(num1.value, num2.value);">
+                <input type="button" class="bt5" value=" ^ " onclick="pot(num1.value, num2.value);">
+                <input type="button" class="bt6" value="Fat" onclick="fat(num1.value);">
+                <input type="button" class="bt7" value="e^x" onclick="e(num1.value);">
+                <input type="button" class="bt8" value="Fibo" onclick="fib(num1.value);">
+                <input type="button" class="bt9" value="baseN" onclick="basen(num1.value, num2.value);">
+                <input type="button" class="bt10" value="Inv" onclick="inv(num1.value);">
+                <input type="button" class="bt11" value="ln" onclick="ln(num1.value);">
+                <input type="button" class="bt12" value="Sen" onclick="seno(num1.value);">
+                <input type="button" class="bt13" value="Cos" onclick="cosseno(num1.value);">
+                <input type="button" class="bt14" value="Tan" onclick="tgn(num1.value);">
+                <input type="button" class="bt15" value="Mod" onclick="modulo(num1.value, num2.value);">
+                <input type="button" class="bt16" value="Bin" onclick="binario(num1.value);">
+                <input type="button" class="bt17" value="Octa" onclick="octa(num1.value);">
+                <input type="button" class="bt18" value="Hexa" onclick="hexa(num1.value);">
+                
+            </div>
+            </fieldset>
+        </form>
+</html>

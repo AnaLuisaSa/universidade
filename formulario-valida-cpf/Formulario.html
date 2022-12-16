@@ -1,0 +1,129 @@
+<!--Faça um formulario de cadastro que valide o cpf digitado
+OBS: Deve ser digitado apenas numeros-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulário</title>
+    <link rel="stylesheet" type=text/css href="cssformulario.css">
+  </head>
+
+  <body>
+    <h1>Ficha Cadastral</h1>
+
+    <form>
+      <!--Tag para montar o formulario-->
+      <fieldset>
+        <!--Agrupamento dos campos-->
+
+        <legend>Dados Pessoais</legend>
+
+        <!--titulo do agrupamento alinhadoao centro-->
+        <label>Nome completo: </label>
+        <input
+          class="alinha"
+          type="text"
+          name="nome"
+          placeholder="digite aqui seu nome"
+          required
+          maxlength="55"
+        />
+        <br /><br />
+        <!--entrada      required torna o preencimento do campo obrigatorio-->
+
+        <label>Rg</label>
+        <input
+          class="alinha"
+          type="text"
+          name="rg"
+          placeholder="digite aqui seu rg"
+          required
+          maxlength="13"
+        /><br /><br />
+
+        <label>CPF</label>
+        <input
+          class="alinha"
+          id="cpf"
+          name="cpf"
+          placeholder="somente numeros"
+          required
+          maxlength="11"
+          onblur="valida(cpf.value);"
+        /><br /><br />
+
+        <label>Endereços</label>
+        <input
+          class="alinha"
+          type="text"
+          name="endereco"
+          placeholder="digite aqui seu endereço"
+          required
+        /><br /><br />
+
+        <label>Email: </label>
+        <input class="alinha" type="email" name="emailAluno" placeholder="digite aqui seu email" /><br /><br />
+
+        <label>Senha: </label>
+        <input
+          class="alinha"
+          type="password"
+          name="senha"
+          maxlength="7"
+          placeholder="somente 7 digitos"
+          required
+        /><br /><br />
+
+        <label>Data de Nasci.</label>
+        <input class="alinhadat" type="date" name="data" required /><br /><br />
+
+        <label>Sexo </label>
+        <!--campo para escolher uma opcao-->
+        <select class="alinhadat">
+          <option>...</option>
+          <option value="fem">Feminino</option>
+          <option value="masc">Masculino</option>
+          <option value="na">Não informar</option></select
+        ><br /><br />
+
+        <label>Escolaridade </label>
+        <!--campo para escolher uma opcao-->
+        <select class="alinhadat">
+          <option>...</option>
+          <option value="fundamental">Ensino Fundamental</option>
+          <option value="medioc">Ensino Médio</option>
+          <option value="supi">Sup.inconpleto</option>
+          <option value="supc">Sup.completo</option>
+          <option value="mest">Mestrado</option>
+          <option value="dout">Doutorado</option></select
+        ><br /><br />
+
+        <label>Situação Civil</label>
+        <!--Cria campos para serem marcados  (apenas 1) e variaveis com o mesmo nome-->
+        <input type="radio" name="situ" value="Solteiro" />Solteiro(a)
+        <input type="radio" name="situ" value="Casado" />Casado(a)
+        <input type="radio" name="situ" value="Viuvo" />Viuvo(a)<br /><br />
+
+        <label>Anexe seu documento com foto: </label>
+        <!--para anexar arquivo-->
+        <input type="file" name="arquivo" /><br /><br />
+
+        <label>Deixe sua reclamacao no campo abaixo: </label><br /><br />
+        <textarea name="textod" rows="8" cols="70"></textarea><br />
+        <!--quantidades de linhas e colunas-->
+      </fieldset>
+      <br />
+
+      <input
+        class="botton"
+        type="submit"
+        name="botao"
+        onclick="dadosEnviados();"
+      />
+      <!--cria o botão para enviar os dados-->
+      <input class="botton" type="reset" value="Limpar Dados" />
+      <!--limpa os dados dos campos-->
+    </form>
+
+    <script type="text/javascript" src="jsForms.js"></script>
+  </body>
+</html>

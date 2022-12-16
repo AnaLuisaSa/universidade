@@ -1,0 +1,60 @@
+fieldset {
+  width: 50%;
+  background-color: rgb(110, 208, 211);
+  border-radius: 15px;
+  border-color: black;
+}
+
+body {
+  background-color: rgb(191, 243, 245);
+}
+
+h1 {
+  position: initial;
+  margin-left: 40%;
+}
+
+legend {
+  text-align: left;
+}
+
+form {
+  text-align: left;
+  margin-left: 30%;
+}
+
+.alinha {
+  position: absolute;
+  left: 40%;
+  width: 285px;
+  height: 20px;
+}
+
+.alinhadat {
+  position: absolute;
+  left: 40%;
+  width: 100px;
+  height: 20px;
+}
+
+.botton {
+  background-color: rgb(191, 243, 245);
+  left: 40%;
+  width: 200px;
+  border-color: black;
+}
+
+input,
+textarea {
+  border-radius: 8px;
+  border-color: black;
+}
+
+label,
+legend {
+  font-weight: bolder;
+}
+
+legend {
+  font-size: 18px;
+}
